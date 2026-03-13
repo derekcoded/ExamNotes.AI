@@ -11,7 +11,7 @@ import PaymentSuccess from "./pages/PaymentSuccess";
 import PaymentFailed from "./pages/PaymentFailed";
 
 
-export const serverUrl = "http://localhost:8000"
+export const serverUrl = "https://examnotes-aiserver2.onrender.com"
 
 function App(){
   const dispatch = useDispatch()
