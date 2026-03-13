@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
-import Auth from "./pages/auth";
+import Auth from "./pages/Auth";
 import { getCurrentUser } from "./services/api";
 import { useDispatch, useSelector } from "react-redux";
 import History from "./pages/History";
