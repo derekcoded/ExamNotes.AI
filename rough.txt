@@ -1,0 +1,1 @@
+mongodb://127.0.0.1:27017/examnotes --this is from .env link from server ---locak mongidb server link
