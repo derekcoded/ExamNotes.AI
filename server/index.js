@@ -16,18 +16,37 @@ dotenv.config();
 
 const app = express()
 
+const allowedOrigins = [
+  'https://examnotes-aiclient2.onrender.com', // Production frontend
+  'http://localhost:5173',                    // Local development
+];
+app.use(cors({
+  origin: function(origin, callback) {
+    // Allow requests like Postman or server-to-server where origin is undefined
+    if (!origin) return callback(null, true);
 
-app.use(cors(
-    {origin:"https://examnotes-aiclient2.onrender.com",
-    credentials:true,
-    methods:["GET","POST","PUT","DELETE","OPTIONS"]
+    if (allowedOrigins.indexOf(origin) === -1) {
+      const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+      return callback(new Error(msg), false);
     }
+    return callback(null, true);
+  },
+  credentials: true, // Allow cookies to be sent
+}));
+
+
+// app.use(cors(
+//     {origin:"https://examnotes-aiclient2.onrender.com",
+//     credentials:true,
+//     methods:["GET","POST","PUT","DELETE","OPTIONS"]
+//     }
+//))
 // app.use(cors(
 //     {origin:"http://localhost:5173",
 //     credentials:true,
 //     methods:["GET","POST","PUT","DELETE","OPTIONS"]
 //     }
-))
+//))
 app.use(express.json())
 app.use(cookieParser())
 const PORT = process.env.PORT || 5000
