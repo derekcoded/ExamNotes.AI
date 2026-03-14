@@ -12,6 +12,8 @@ import PaymentFailed from "./pages/PaymentFailed";
 
 
 export const serverUrl = "https://examnotes-aiserver2.onrender.com"
+// export const serverUrl = "http://localhost:8000"
+
 
 function App(){
   const dispatch = useDispatch()
@@ -28,8 +30,8 @@ function App(){
     <Route path='/history' element={userData ? <History/>:<Navigate to ="/auth"replace/>} />
     <Route path='/notes' element={userData ? <Notes/>:<Navigate to ="/auth"replace/>} />
     <Route path='/pricing' element={userData ? <Pricing/>:<Navigate to ="/auth"replace/>} />
-    <Route path="/payment-success" element={<PaymentSuccess />} />
-    <Route path="/payment-failed" element={<PaymentFailed />} />
+    <Route path="/payment-success" element={userData?<PaymentSuccess />:<Navigate to ="/auth"replace/>} />
+    <Route path="/payment-failed" element={userData?<PaymentFailed />:<Navigate to ="auth"replace/>} />
    
    </Routes>
    </>
