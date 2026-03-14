@@ -17,20 +17,19 @@ dotenv.config();
 const app = express()
 
 const allowedOrigins = [
-  "http://localhost:5173",
-  "https://examnotes-aiclient2.onrender.com"
+  'https://examnotes-aiclient2.onrender.com', // Production frontend
+                     
 ];
+app.use(cors({
+  origin: function(origin, callback) {
+    // Allow requests like Postman or server-to-server where origin is undefined
+    if (!origin) return callback(null, true);
 
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("CORS not allowed"));
-      }
+     if (!allowedOrigins.includes(origin))
+        return callback(new Error("CORS not allowed"), false);
+      return callback(null, true);
     },
-    credentials: true
+    credentials: true, // allow cookies
   })
 );
 
