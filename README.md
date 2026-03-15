@@ -9,18 +9,20 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white)]()
 [![Razorpay](https://img.shields.io/badge/Razorpay-02042B?style=flat&logo=razorpay&logoColor=white)]()
 
-**ExamNotes.AI** is a production-ready application designed to help students and professionals streamline their studies. By leveraging the Gemini AI model, it instantly creates comprehensive notes, visual aids, and subject-wise important questions. It features a custom credit-based usage system powered by **Razorpay**.
+**ExamNotes.AI** is a production-ready application designed to help students and professionals streamline their studies. By leveraging the Gemini AI model, it instantly creates comprehensive notes, visual aids, and subject-wise important questions. It also features a custom credit-based usage system powered by **Razorpay**.
 
 ---
 
 ## ✨ Key Features
 
 - 🧠 **AI-Powered Note Generation:** Generate structured, exam-ready notes in seconds using Google Gemini.
-- 📊 **Auto-Generated Visuals:** Automatically create diagrams, graphs, and charts to understand complex concepts.
-- ⚡ **Revision Mode:** Condense long topics into short, crisp, and easy-to-digest bullet points.
-- 🎯 **Targeted Question Banks:** Generate class-wise and subject-wise important questions.
-- 💳 **Credit-Based System (Razorpay):** Secure payment gateway integration for purchasing AI generation credits (tailored for seamless Indian payment routing).
+- 📄 **Clean, Downloadable PDFs:** Export your AI-generated notes instantly into clean, well-formatted PDF files for offline studying.
+- 📊 **Auto-Generated Visuals:** Notes automatically include AI-generated diagrams, graphs, and charts to make complex concepts easy to understand.
+- ⚡ **Revision Mode:** Condense long topics and heavy chapters into short, crisp, and easy-to-digest bullet points right before an exam.
+- 🎯 **Targeted Question Banks:** Automatically generate class-wise and subject-wise important questions to test your knowledge.
+- 💳 **Secure Payment System (Razorpay):** A fully integrated credit-based usage system. Users can easily purchase pricing plans and AI generation credits using Razorpay.
 - 🔒 **Secure Authentication:** Robust user authentication and session management using JWT.
+- 🚀 **Production Ready:** Built with scalable MERN architecture, ready for real-world deployment.
 
 ---
 
@@ -40,7 +42,7 @@
 - Google Gemini API
 
 **Payments**
-- Razorpay Integration
+- Razorpay Integration (For credit purchases and pricing plans)
 
 ---
 
