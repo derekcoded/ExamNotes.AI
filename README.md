@@ -19,7 +19,7 @@ The platform also includes a **credit-based system with online payments** for pr
 🚀 Try the application here:
     URL: https://examnotes-aiclient2.onrender.com
 
-    ---
+---
 
 # ✨ Features
 
