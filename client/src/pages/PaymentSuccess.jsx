@@ -6,12 +6,17 @@ import { useNavigate } from "react-router-dom";
 function PaymentSuccess() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  useEffect(() => {
+   useEffect(() => {
     const fetchUser = async () => {
-      const res = await fetch("http://localhost:8000/api/user/currentuser", {
+      const res = await fetch("https://examnotes-aiserver2.onrender.com", {
         credentials: "include",
       });
+
+  // useEffect(() => {
+  //   const fetchUser = async () => {
+  //     const res = await fetch("http://localhost:8000/api/user/currentuser", {
+  //       credentials: "include",
+  //     });
 
       const user = await res.json();
 

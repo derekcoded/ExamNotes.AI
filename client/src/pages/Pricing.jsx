@@ -13,8 +13,18 @@ function Pricing() {
       setPaying(true);
 
       // call backend to create razorpay order
+      // const res = await fetch(
+      //   "http://localhost:8000/api/payment/create-order",
+      //   {
+      //     method: "POST",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({ amount }),
+      //   },
+      // );
       const res = await fetch(
-        "http://localhost:8000/api/payment/create-order",
+        "https://examnotes-aiserver2.onrender.com/api/payment/create-order",
         {
           method: "POST",
           headers: {
@@ -36,8 +46,15 @@ function Pricing() {
 
         handler: async function (response) {
           try {
+            // const verifyRes = await fetch(
+            //   "http://localhost:8000/api/payment/verify-payment",
+            //   {
+            //     method: "POST",
+            //     headers: {
+            //       "Content-Type": "application/json",
+            //     },
             const verifyRes = await fetch(
-              "http://localhost:8000/api/payment/verify-payment",
+              "https://examnotes-aiserver2.onrender.com/api/payment/verify-payment",
               {
                 method: "POST",
                 headers: {
