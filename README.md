@@ -13,6 +13,12 @@ The platform also includes a **credit-based system with online payments** for pr
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white)]()
 [![Razorpay](https://img.shields.io/badge/Razorpay-02042B?style=flat&logo=razorpay&logoColor=white)]()
 
+
+# 🌐 Live Demo
+
+🚀 Try the application here:
+    URL: https://examnotes-aiclient2.onrender.com
+
 # ✨ Features
 
 ### 🤖 AI-Powered Notes Generation
@@ -239,17 +245,6 @@ Flow:
 
 ---
 
-# 📸 Screenshots
-
-You can add screenshots here for:
-
-* Home Page
-* Notes Generator
-* Pricing Page
-* Generated Notes
-* History Page
-
----
 
 # 🧠 Future Improvements
 
