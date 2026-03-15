@@ -33,7 +33,7 @@ function App(){
     <Route path='/notes' element={userData ? <Notes/>:<Navigate to ="/auth"replace/>} />
     <Route path='/pricing' element={userData ? <Pricing/>:<Navigate to ="/auth"replace/>} />
     <Route path="/payment-success" element={userData?<PaymentSuccess />:<Navigate to ="/auth"replace/>} />
-    <Route path="/payment-failed" element={userData?<PaymentFailed />:<Navigate to ="auth"replace/>} />
+    <Route path="/payment-failed" element={userData?<PaymentFailed />:<Navigate to ="/auth"replace/>} />
    
    </Routes>
    </>

@@ -30,6 +30,7 @@ function Pricing() {
           headers: {
             "Content-Type": "application/json",
           },
+          credentials:"include",
           body: JSON.stringify({ amount }),
         },
       );
@@ -211,7 +212,7 @@ function PricingCard({
     rounded-xl p-6 bg-white
     border transition ${
       isSelected
-        ? "boder-black"
+        ? "border-black"
         : popular
           ? "border-indigo-500"
           : "border-gray-200"
