@@ -1,7 +1,11 @@
-# 📚 ExamNotes.AI
+# ExamNotes AI 📚🤖
 
-> A powerful MERN-stack AI SaaS platform that generates exam-oriented notes, diagrams, and revision materials in just one click. 
+**ExamNotes AI** is an AI-powered study assistant that generates **structured, exam-focused notes instantly** from any topic.
+Students can generate revision-ready notes, include diagrams/charts, download PDFs, and manage their notes history — all powered by AI.
 
+The platform also includes a **credit-based system with online payments** for premium usage.
+
+---
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![React (Vite)](https://img.shields.io/badge/React_Vite-20232A?style=flat&logo=react&logoColor=61DAFB)]()
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat&logo=tailwind-css&logoColor=white)]()
@@ -9,107 +13,283 @@
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=flat&logo=mongodb&logoColor=white)]()
 [![Razorpay](https://img.shields.io/badge/Razorpay-02042B?style=flat&logo=razorpay&logoColor=white)]()
 
-**ExamNotes.AI** is a production-ready application designed to help students and professionals streamline their studies. By leveraging the Gemini AI model, it instantly creates comprehensive notes, visual aids, and subject-wise important questions. It also features a custom credit-based usage system powered by **Razorpay**.
+# ✨ Features
+
+### 🤖 AI-Powered Notes Generation
+
+* Generate **exam-focused notes instantly**
+* Supports **topic-based learning**
+* Structured output optimized for **quick revision**
+
+### 🎯 Smart Study Options
+
+* Exam revision mode
+* Include diagrams
+* Include charts
+* Custom exam type (CBSE, JEE, NEET, etc.)
+* Class/level specific notes
+
+### 💳 Credit-Based System
+
+* Users receive credits
+* Each note generation consumes credits
+* Credits can be purchased via payment gateway
+
+### 📄 PDF Export
+
+* Download generated notes as **high-quality PDFs**
+
+### 📚 Notes History
+
+* View previously generated notes
+* Access them anytime
+
+### 🔐 Authentication
+
+* Secure login & signup
+* HTTP-only cookie authentication
+* Protected routes
+
+### ⚡ Fast UI
+
+* Smooth animations
+* Real-time generation progress
+* Modern responsive UI
 
 ---
 
-## ✨ Key Features
+# 🛠️ Tech Stack
 
-- 🧠 **AI-Powered Note Generation:** Generate structured, exam-ready notes in seconds using Google Gemini.
-- 📄 **Clean, Downloadable PDFs:** Export your AI-generated notes instantly into clean, well-formatted PDF files for offline studying.
-- 📊 **Auto-Generated Visuals:** Notes automatically include AI-generated diagrams, graphs, and charts to make complex concepts easy to understand.
-- ⚡ **Revision Mode:** Condense long topics and heavy chapters into short, crisp, and easy-to-digest bullet points right before an exam.
-- 🎯 **Targeted Question Banks:** Automatically generate class-wise and subject-wise important questions to test your knowledge.
-- 💳 **Secure Payment System (Razorpay):** A fully integrated credit-based usage system. Users can easily purchase pricing plans and AI generation credits using Razorpay.
-- 🔒 **Secure Authentication:** Robust user authentication and session management using JWT.
-- 🚀 **Production Ready:** Built with scalable MERN architecture, ready for real-world deployment.
+### Frontend
+
+* React
+* Redux Toolkit
+* React Router
+* Axios
+* Motion / Framer Motion
+* Tailwind CSS
+
+### Backend
+
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+
+### AI Integration
+
+* Google Gemini API
+
+### Payments
+
+* Razorpay
+
+### Deployment
+
+* Frontend: Render
+* Backend: Render
+* Database: MongoDB Atlas
 
 ---
 
-## 🛠️ Tech Stack
+# 📂 Project Structure
 
-**Frontend**
-- React.js (Vite)
-- Tailwind CSS
-
-**Backend**
-- Node.js
-- Express.js
-- JSON Web Tokens (JWT) for Authentication
-
-**Database & AI**
-- MongoDB (Mongoose)
-- Google Gemini API
-
-**Payments**
-- Razorpay Integration (For credit purchases and pricing plans)
+```
+ExamNotes.AI
+│
+├── client
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── redux
+│   │   ├── services
+│   │   └── App.jsx
+│
+├── server
+│   ├── controllers
+│   ├── routes
+│   ├── services
+│   ├── utils
+│   └── index.js
+│
+└── README.md
+```
 
 ---
 
-## 🚀 Getting Started
+# ⚙️ Installation
 
-Follow these steps to set up the project locally on your machine.
+### 1️⃣ Clone the repository
 
-### Prerequisites
-Make sure you have the following installed:
-- [Node.js](https://nodejs.org/) (v16 or higher)
-- [MongoDB](https://www.mongodb.com/) (Local or Atlas URI)
-- A [Razorpay](https://razorpay.com/) account for payment API keys
-- A [Google Gemini API](https://ai.google.dev/) key
-
-### 1. Clone the Repository
 ```bash
-git clone [https://github.com/derekcoded/ExamNotes.AI.git](https://github.com/derekcoded/ExamNotes.AI.git)
+git clone https://github.com/yourusername/ExamNotes.AI.git
 cd ExamNotes.AI
-2. Backend Setup
-Open a terminal and navigate to the backend folder:
+```
 
-Bash
-cd backend
+---
+
+### 2️⃣ Install dependencies
+
+#### Client
+
+```bash
+cd client
 npm install
-Create a .env file in the backend directory and add the following:
+```
 
-Code snippet
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-GEMINI_API_KEY=your_google_gemini_api_key
-RAZORPAY_KEY_ID=your_razorpay_key_id
-RAZORPAY_KEY_SECRET=your_razorpay_key_secret
-Start the backend server:
+#### Server
 
-Bash
-npm run dev
-3. Frontend Setup
-Open a new terminal window and navigate to the frontend folder:
-
-Bash
-cd frontend
+```bash
+cd server
 npm install
-Create a .env file in the frontend directory:
+```
 
-Code snippet
-VITE_BACKEND_URL=http://localhost:5000
-VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
-Start the React development server:
+---
 
-Bash
+# 🔑 Environment Variables
+
+Create a `.env` file inside the **server** folder.
+
+Example:
+
+```
+PORT=8000
+
+MONGO_URI=your_mongodb_connection
+
+JWT_SECRET=your_jwt_secret
+
+GEMINI_API_KEY=your_gemini_api_key
+
+RAZORPAY_KEY_ID=your_key
+RAZORPAY_KEY_SECRET=your_secret
+
+NODE_ENV=production
+```
+
+---
+
+# ▶️ Running the Project
+
+### Start Backend
+
+```bash
+cd server
 npm run dev
-🤝 Contributing
-Contributions, issues, and feature requests are welcome!
-If you'd like to improve the app, please fork the repository and create a pull request.
+```
 
-Fork the Project
+### Start Frontend
 
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
+```bash
+cd client
+npm start
+```
 
-Commit your Changes (git commit -m 'Add some AmazingFeature')
+---
 
-Push to the Branch (git push origin feature/AmazingFeature)
+# 🚀 Deployment
 
-Open a Pull Request
+The project is deployed using:
 
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
+* Frontend → Render
+* Backend → Render
+* Database → MongoDB Atlas
 
-Built with ❤️ by derekcoded/Alok_Singh
+Steps:
+
+1. Deploy backend on Render
+2. Set environment variables
+3. Deploy frontend
+4. Update API base URL in frontend
+
+Example:
+
+```javascript
+export const serverUrl = "https://your-backend.onrender.com"
+```
+
+---
+
+# 🔐 Authentication
+
+Authentication is handled using **JWT stored in HTTP-only cookies**.
+
+Cookie configuration:
+
+* httpOnly
+* secure (production)
+* sameSite: None
+* 7-day expiration
+
+This ensures **secure cross-origin authentication**.
+
+---
+
+# 💳 Payments
+
+Payments are handled via **Razorpay**.
+
+Flow:
+
+1. User selects credit plan
+2. Razorpay order is created on backend
+3. User completes payment
+4. Backend verifies payment
+5. Credits are added to user account
+
+---
+
+# 📸 Screenshots
+
+You can add screenshots here for:
+
+* Home Page
+* Notes Generator
+* Pricing Page
+* Generated Notes
+* History Page
+
+---
+
+# 🧠 Future Improvements
+
+* AI quiz generation
+* Flashcards
+* Multi-language notes
+* Voice input
+* Collaborative study rooms
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+Steps:
+
+1. Fork the repository
+2. Create a new branch
+3. Make changes
+4. Submit a pull request
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author
+
+**Alok Singh**
+
+AI Developer | Full Stack Developer
+
+---
+
+# ⭐ Support
+
+If you like this project, please **give it a star ⭐ on GitHub**.
+
+It helps others discover the project.
