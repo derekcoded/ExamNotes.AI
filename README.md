@@ -61,3 +61,55 @@ Make sure you have the following installed:
 ```bash
 git clone [https://github.com/derekcoded/ExamNotes.AI.git](https://github.com/derekcoded/ExamNotes.AI.git)
 cd ExamNotes.AI
+2. Backend Setup
+Open a terminal and navigate to the backend folder:
+
+Bash
+cd backend
+npm install
+Create a .env file in the backend directory and add the following:
+
+Code snippet
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+GEMINI_API_KEY=your_google_gemini_api_key
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+Start the backend server:
+
+Bash
+npm run dev
+3. Frontend Setup
+Open a new terminal window and navigate to the frontend folder:
+
+Bash
+cd frontend
+npm install
+Create a .env file in the frontend directory:
+
+Code snippet
+VITE_BACKEND_URL=http://localhost:5000
+VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
+Start the React development server:
+
+Bash
+npm run dev
+🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+If you'd like to improve the app, please fork the repository and create a pull request.
+
+Fork the Project
+
+Create your Feature Branch (git checkout -b feature/AmazingFeature)
+
+Commit your Changes (git commit -m 'Add some AmazingFeature')
+
+Push to the Branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+📄 License
+Distributed under the MIT License. See LICENSE for more information.
+
+Built with ❤️ by derekcoded/Alok_Singh
